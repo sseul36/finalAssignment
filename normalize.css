@@ -1,0 +1,59 @@
+#header
+{
+    background-color:#111B3C;
+    color:white;
+    border-radius: 0.5em;
+    height: 100px;
+    width: 100%; 
+    text-align: center;
+}
+
+#container
+{
+    display: flex;
+}
+
+div
+{
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+#navigation
+{
+    background-color:rgb(253, 135, 151);
+    color:white;
+    width:300px;
+    height: 500px;
+    float:left;
+    border: #FFFFFF solid 2px;
+    border-radius: 1em; 
+}
+
+#body
+{
+    background-position: center center;
+    background-size: cover;
+    height:600px;
+    padding:250px 0 0 0;
+}
+
+#sidePanel{
+    background-color:rgb(253, 135, 151);
+    color:white;
+    width:200px;
+    height: 300px;
+    border-radius: 1em;
+    text-align: center; 
+}
+
+footer
+{
+    background-color:#111B3C;
+    color:white;
+    border-radius: 0.5em;
+    height: 30px;
+    width: 100%; 
+    text-align: center;
+}
+

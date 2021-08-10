@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <script src="js/info.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <h1>
+            Welcome Travel Adventures
+        </h1>
+    </div>
+
+    <div id="container">
+        <form id='userinfo' name='form1' action='https://httpbin.org/post' method='post' onsubmit='return formValidation();'>
+            <h1>User Information</h1><br /><hr>
+            <h3>Please Enter your profile</h3>
+            FirstName <input id="firstname" name="firstname" autofocus required/><br />
+            LastName <input id="lastname" name="lastname" autofocus required/><br />
+            Password <input type="password" id="password"/><br />
+            Username <input id="username" name="username" autofocus required maxlength='15'/><br />
+            Education Level <input type="text" list="degree" name="EduLevel" placeholder="-select-"/><br />
+            <datalist id="degree">
+                <option value="Technical Diploma">Technical Diploma</option>
+                <option value="College Diploma">College Diploma</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="Others">Others</option>
+            </datalist>
+            Education Status 
+            <ul>
+                <li><input type="radio" name="EduStatus" id="status-1" value="Graduated" checked/>Graduated</li>
+                <li><input type="radio" name="EduStatus" id="status-2" value="Current enrolled"/>Current enrolled</ li>
+                <li><input type="radio" name="EduStatus" id="status-3" value="Did not graduate"/>Did not graduate</ li>
+            </ul>
+            Email <input id="email" name="entry07" type="email" required="required"/><br />
+            Age <input id="age" name="entry08" type="number" min="18" max="60"/><br />
+            <hr>
+            
+            <p>
+                <h3>Please Confirm</h3>
+                <input type='submit' value=' Submit ' />&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type='reset' value=' Clear  ' onclick="clearErrors();" />
+            </p>
+            <hr>
+            <div id="errors"></div>
+
+            <input type="hidden" name="lastName" id="lastName" value="Park"/>
+            <input type="hidden" name="studentId" id="studentId" value="159906197"/>
+
+        </form>
+    </div>
+    
+    <footer>
+        <p>ⓒ Adventure Travel Corp</p>
+    </footer>
+    
+</body>
+</html>
